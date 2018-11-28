@@ -16,6 +16,10 @@
 		#define EXT_RECURSOS extern
 	#endif
 
+	#define MODEM		1
+	#define DRIVER		2
+	#define SCANNER		3
+	#define IMPRESSORA	4
 		
 	sem_t impressora;
 	sem_t modem;

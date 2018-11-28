@@ -10,11 +10,11 @@
 		#define EXT_PROCESSOS extern
 	#endif
 
-	/*typedef struct{
-		cFile *tabela_classe;
-		int count_class;
-	}method_area;
-	method_area methodArea;*/
+	#define PROC_TEMPO_REAL	 0
+	#define PROC_USUARIO_1	 1
+	#define PROC_USUARIO_2	 2
+	#define PROC_USUARIO_3	 3
+	
 
 	/*EXT_PROCESSOS void init_semaphoro();*/
 	/*EXT_ESCALONADOR */

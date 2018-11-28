@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#include "../headers/processos.h"
 
 #ifndef MEMORIA
 	#define MEMORIA
@@ -9,13 +10,17 @@
 	#else
 		#define EXT_MEMORIA extern
 	#endif
+	
+	#define MAX_MEM		1024
+	#define MEM_REAL	64
+	#define MEM_USER	MAX_MEM - MEM_REAL
 
-	/*typedef struct{
-		cFile *tabela_classe;
-		int count_class;
-	}method_area;
-	method_area methodArea;*/
+	#define	START		0
 
-	/*EXT_MEMORIA void init_semaphoro();*/
-	/*EXT_ESCALONADOR */
+	int mem[MAX_MEM];
+
+
+	EXT_MEMORIA unsigned int aloca_mem(unsigned int qtd, int tipo_p);
+	EXT_MEMORIA unsigned int verificacao(unsigned int qtd, unsigned int inic, unsigned int fim);
+	EXT_MEMORIA void desaloca(unsigned int offset,unsigned int qtd);
 #endif
