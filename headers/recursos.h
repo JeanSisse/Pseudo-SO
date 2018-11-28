@@ -28,4 +28,5 @@
 
 	EXT_RECURSOS void init_semaphoro();
 	EXT_RECURSOS int controle_recursos(int recurso);
+	EXT_RECURSOS void liberar_recurso(int recurso);
 #endif

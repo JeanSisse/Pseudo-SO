@@ -46,3 +46,22 @@ int controle_recursos(int recurso){
 	}
 	return 0;
 }
+
+void liberar_recurso(int recurso){
+	switch(recurso){
+		case MODEM:
+			sem_post(&modem);
+			break;
+		case DRIVER:
+			sem_post(&driver);
+			break;
+		case SCANNER:
+			sem_post(&scanner);
+			break;
+		case IMPRESSORA:
+			sem_post(&impressora);
+			break;
+		default:
+			break;
+	}
+}
